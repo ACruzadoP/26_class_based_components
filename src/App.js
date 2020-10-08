@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import PassingPWCBC from "./Child"
+
+// FUNCTIONAL COMPONENT
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <PassingPWCBC
+                firstvariable = "This is the first string of the first call"
+                secondvariable = "This is the second string of the first call"
+            />
+            <PassingPWCBC
+                firstvariable = "This is the first string of the second call"
+                secondvariable = "This is the second string of the second call"
+            />
+        </div>
+    )
 }
 
-export default App;
+
+//CLASS_BASED COMPONENTS (see example on Child.js)
+
+// class App extends React.Component {
+
+//     yourMethodHere() {
+        
+//     }
+
+//     render() {
+//         const style = this.yourMethodHere()
+//         return (
+//             <div>
+                 
+//             </div>
+//         )
+//     }
+// }
+
+
+export default App
